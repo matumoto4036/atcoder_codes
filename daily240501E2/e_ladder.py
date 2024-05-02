@@ -19,18 +19,37 @@
 # print(search(0))
 
 
-from collections import defaultdict, deque
+# from collections import defaultdict, deque
+# n = int(input())
+# graph = defaultdict(list)
+# for _ in range(n) :
+# 	a, b = map(int, input().split())
+# 	graph[a].append(b)
+# 	graph[b].append(a)
+# que = deque()
+# que.append(1)
+# S = {1}
+# while que:
+# 	v = que.popleft()
+# 	for i in graph[v]:
+# 		if not i in S:
+# 			que.append(i)
+# 			S.add(i)
+# print(max(S))
+
+
 n = int(input())
-graph = defaultdict(list)
+graph = [[] for _ in range(100)]
 for _ in range(n) :
 	a, b = map(int, input().split())
 	graph[a].append(b)
 	graph[b].append(a)
-que = deque()
+
+que = []
 que.append(1)
 S = {1}
 while que:
-	v = que.popleft()
+	v = que.pop(0)
 	for i in graph[v]:
 		if not i in S:
 			que.append(i)
