@@ -6,7 +6,7 @@
     "configurations": [
         {
             "name": "Python デバッガー: 現在のファイル",
-            "type": "debugpy",
+            "type": "",
             "request": "launch",
             "program": "${file}",
             //"stopOnEntry": true,

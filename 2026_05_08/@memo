@@ -1,0 +1,51 @@
+JAVA導入
+適当な拡張機能
+https://cad-kenkyujo.com/vscode-java/
+
+自動整形
+shift alt f
+
+git clone 
+ブラウザでurl>ソース管理のとこにいれるだけ
+
+ターミナルの下矢印のbashを選ぶとlinuxコマンドうてる
+
+
+「茶色コーダー」で要求される 4 つのことを読む
+AtCoder で茶色コーダー、つまりレーティング 400 に到達するためには、
+
+AtCoder Beginner Contest の A, B 問題が確実に（大方 15 分以内で）解ける
+AtCoder Beginner Contest の C 問題も簡単なものなら解ける
+
+1-6-1. AOJ の「Introduction To Programming I」を全部解く！
+
+ABCとARCにでる　
+
+
+
+
+
+
+
+
+
+新規ファイルのキーバインド設定
+ctr shift p>preference open keybord shortcut json>
+// 既定値を上書きするには、このファイル内にキー バインドを挿入します
+[
+    {
+        "key": "ctrl+shift+n",
+        "command": "-workbench.action.newWindow",
+        "when": "!isSessionsWindow"
+    },
+    {
+        "key": "ctrl+shift+n",
+        "command": "-chatEditor.action.reject",
+        "when": "chatEdits.hasEditorModifications && editorFocus && !chatEdits.isCurrentlyBeingModified || chatEdits.hasEditorModifications && notebookEditorFocused && !chatEdits.isCurrentlyBeingModified"
+    },
+    { 
+        "key": "ctrl+shift+n",
+        "command": "explorer.newFile" 
+    }
+]
+
